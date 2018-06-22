@@ -5,6 +5,28 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GestorPagosOBJ", "GestorPagosOBJ\GestorPagosOBJ.vbproj", "{46F850DF-911F-4B76-9884-1D163C248A02}"
 EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "GestorDePagosDAO", "GestorDePagosDAO\GestorDePagosDAO.vbproj", "{C468C73C-38D0-4AA6-B1C3-43242965929B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GestorPagosWebsite", "GestorPagosWebsite\", "{26C11C80-1061-465D-A0EC-63948935199A}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52118"
+		Debug.AspNetCompiler.PhysicalPath = "GestorPagosWebsite\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52118\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52118"
+		Release.AspNetCompiler.PhysicalPath = "GestorPagosWebsite\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52118\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52118"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +37,14 @@ Global
 		{46F850DF-911F-4B76-9884-1D163C248A02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46F850DF-911F-4B76-9884-1D163C248A02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46F850DF-911F-4B76-9884-1D163C248A02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C468C73C-38D0-4AA6-B1C3-43242965929B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C468C73C-38D0-4AA6-B1C3-43242965929B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C468C73C-38D0-4AA6-B1C3-43242965929B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C468C73C-38D0-4AA6-B1C3-43242965929B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26C11C80-1061-465D-A0EC-63948935199A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C11C80-1061-465D-A0EC-63948935199A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26C11C80-1061-465D-A0EC-63948935199A}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{26C11C80-1061-465D-A0EC-63948935199A}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
