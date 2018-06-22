@@ -10,6 +10,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GestorPagosWebsite", "GestorPagosWebsite\", "{26C11C80-1061-465D-A0EC-63948935199A}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{46f850df-911f-4b76-9884-1d163c248a02}|GestorPagosOBJ.dll;{c468c73c-38d0-4aa6-b1c3-43242965929b}|GestorDePagosDAO.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_52118"
 		Debug.AspNetCompiler.PhysicalPath = "GestorPagosWebsite\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52118\"
@@ -25,6 +26,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "GestorPagosWebsite", "Gesto
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "52118"
+		SlnRelativePath = "GestorPagosWebsite\"
 	EndProjectSection
 EndProject
 Global

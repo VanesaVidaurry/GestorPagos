@@ -1,4 +1,4 @@
-﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="Pago.aspx.vb" Inherits="NuevoPago.Pago" %>
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="frm_pagos.aspx.vb" Inherits="frm_pagos" %>
 
 <!DOCTYPE html>
 

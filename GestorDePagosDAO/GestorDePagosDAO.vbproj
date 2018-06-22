@@ -99,6 +99,12 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GestorPagosOBJ\GestorPagosOBJ.vbproj">
+      <Project>{46f850df-911f-4b76-9884-1d163c248a02}</Project>
+      <Name>GestorPagosOBJ</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
