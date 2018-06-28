@@ -26,7 +26,12 @@
         End Try
     End Function
 
-    Public Shared Function MuestraPagos(MiPago As GestorPagosOBJ.Pago)
+    ''' <summary>
+    ''' 
+    ''' </summary>
+    ''' <param name="MiPago"></param>
+    ''' <returns></returns>
+    Public Shared Function MuestraPagos(MiPago As GestorPagosOBJ.Pago) As DataTable
         Try
 
             'SE CREA LA TABLA PARA PODER OBTENER 
@@ -39,17 +44,9 @@
             Dim ListaParametros As New List(Of H_SQLDB.MSSQL.SqlParam)
             'SE AGREGAN LOS PARAMETROS 
             ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@Accion", 2, SqlDbType.Int))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cDetalle", MiPago.Detalle, SqlDbType.Text))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cTipo", MiPago.TipoPago, SqlDbType.Text))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cEmpresaPago", MiPago.Empresa, SqlDbType.Text))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cEmpresaBeneficiaria", MiPago.Beneficiario, SqlDbType.Text))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cPeriodoPago", MiPago.PeriodoPago, SqlDbType.Text))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cEstutusPago", MiPago.Pagado, SqlDbType.Int))
-            ListaParametros.Add(New H_SQLDB.MSSQL.SqlParam("@cPersonaPago", MiPago.PersonaPago, SqlDbType.Text))
-
 
             'Se ejecuta el comando de base de datos.
-            ''''''''''Dim SP As Integer = H_SQLDB.MSSQL.obtenerDataTable(CS, "SP_Pagos", CommandType.StoredProcedure, ListaParametros))
+            Return H_SQLDB.MSSQL.obtenerDataTable(CS, H_SQLDB.MSSQL.generaCommand("SP_Pagos", CommandType.StoredProcedure, ListaParametros))
             'Procedimiento que arroja un mensaje cuando ay un error.
         Catch ex As Exception
             Err.Raise(50001, "frm_pagos.Btn_consutar_Click().obtenerDataTable()", "Error al ejecutar el procedimiento en la base de datos: " & ex.Message)
